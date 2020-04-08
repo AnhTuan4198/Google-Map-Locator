@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORE LOCATOR</title>
+    <link rel='stylesheet' href="./style/style.css"/>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+</head>
+<body>
+    <div class='title'>Store Locator</div>
+    <div id="map" ></div>
+    <div class='search-container'>
+        <div class='search'>
+            <input id='zip-code-input' type='text' placeholder="Enter ZIP">
+        </div>
+        <div class="search-icon"><i class="fas fa-search"></i>
+        </div>
+    </div>
+    <div class='stores-list-container'>
+        <div class='stores-list'>
+            <div class='store-container'>
+                <div class='store-address'>
+                    <p> 5423 Address</p>
+                    <p> Los Angle,CA 90048</p>
+                </div>
+                <div class='store-phone-number'>
+                   0937058859
+                </div>
+            </div>
+            <div class='store-container'>
+                <div class='store-address'>
+                    <p> 5423 Address</p>
+                    <p> Los Angle,CA 90048</p>
+                </div>
+                <div class='store-phone-number'>
+                    0937058859
+                </div>
+            </div>
+            <div class='store-container'>
+                <div class='store-address'>
+                    <p> 5423 Address</p>
+                    <p> Los Angle,CA 90048</p>
+                </div>
+                <div class='store-phone-number'>
+                    0937058859
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+    </script>
+</body>
+</html>
