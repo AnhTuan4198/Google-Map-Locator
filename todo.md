@@ -4,7 +4,9 @@
 - Import google to windows                  (DONE)
 - Add text for each location in map         (XXXX)
 - Add input filed for search location       (DONE)
-- Show the location list                     
-- Add individual
+- Show the location list                    (DONE)
+- Add individual                            (DONE)
+-SHow all the stores int the store list base on storedata
+- show marker based on real world store data
 - Marked the found location on map
 - Show details info of each location while click location on map 

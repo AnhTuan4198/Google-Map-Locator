@@ -15,6 +15,8 @@ body {
     font-size: 88px;
     font-weight: 600;
     z-index: 1;
+    color:white;
+    text-shadow: 0px 0px 8px white;
 }
 
 .search-container{
@@ -67,21 +69,32 @@ body {
     width: 400px;
     background-color: white;
     border-radius: 30px;
+    overflow-y:hidden;
+    display:flex;
 }
-
+.stores-list-container .stores-list{
+    flex-grow: 1;
+    overflow-y:scroll;
+    padding-left: 20px ;
+    margin-right: 20px ;
+}
 .store-container {
     width:90%;
     border-bottom:1.5px solid rgb(117, 117, 117);
     min-height: 80px;
     display: flex;
-    flex-direction: column;
     margin:20px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     transition: 0.4s;
 }
+
+
 .store-container:hover{
     background-color: rgb(209, 209, 209);
+}
+.store-container .store-info-container{
+    flex-basis:95%;
 }
 .store-container .store-address {
     margin-left:10px;
@@ -92,4 +105,63 @@ body {
 .store-container .store-phone-number{
      margin-left: 10px;
      color: rgb(145, 145, 145);
+}
+.store-container .store-number-container{
+    flex-basis:5%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.store-container .store-number-container .store-number{
+    height: 30px;
+    width:30px;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color:white;
+}
+
+.marker-info{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+}
+.marker-info .store-marker-name-container{
+    margin:10px 0;
+    padding:10px 0 ;
+    width: 100%;
+    border-bottom: 1px solid rgb(71, 71, 71);
+    line-height: 0.3rem;
+    
+}
+
+.marker-info .store-marker-name-container p{
+    color: rgb(122, 122, 122);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;    
+}
+
+.marker-info .store-marker-address,.marker-info .store-market-phoneNumber  {
+    display: flex;
+    align-items: center;
+}
+.marker-info .store-marker-address .icon,.marker-info .store-market-phoneNumber .icon {
+
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 148, 212);
+    color: white;
+    border-radius: 50%;
+}
+.marker-info .store-marker-address p,.marker-info .store-market-phoneNumber p{
+    flex-basis: 80%;
+    margin-left:20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',serif;
+     
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STORE LOCATOR</title>
     <link rel='stylesheet' href="./style/style.css"/>
+    <script src="js/store-data.js"></script>
     <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
 </head>
 <body>
@@ -14,38 +15,12 @@
         <div class='search'>
             <input id='zip-code-input' type='text' placeholder="Enter ZIP">
         </div>
-        <div class="search-icon"><i class="fas fa-search"></i>
+        <div class="search-icon" id="search-btn"><i class="fas fa-search" onclick="search()"></i>
         </div>
     </div>
     <div class='stores-list-container'>
-        <div class='stores-list'>
-            <div class='store-container'>
-                <div class='store-address'>
-                    <p> 5423 Address</p>
-                    <p> Los Angle,CA 90048</p>
-                </div>
-                <div class='store-phone-number'>
-                   0937058859
-                </div>
-            </div>
-            <div class='store-container'>
-                <div class='store-address'>
-                    <p> 5423 Address</p>
-                    <p> Los Angle,CA 90048</p>
-                </div>
-                <div class='store-phone-number'>
-                    0937058859
-                </div>
-            </div>
-            <div class='store-container'>
-                <div class='store-address'>
-                    <p> 5423 Address</p>
-                    <p> Los Angle,CA 90048</p>
-                </div>
-                <div class='store-phone-number'>
-                    0937058859
-                </div>
-            </div>
+        <div class='stores-list' id='stores-list'>
+            
         </div>
     </div>
 
